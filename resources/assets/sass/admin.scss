@@ -1,0 +1,64 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+$blue: #328fcc;
+$yellow: #fdc70e;
+$mainFont: 'Lato';
+
+#wrapper {
+	nav {
+		&.navbar {
+			background-color: $blue;
+			border-color: $blue;
+			.navbar-header {
+				a {
+					color: white;
+				}
+			}
+
+			ul.navbar-top-links {
+				li {
+					a {
+						color: white;
+						&:hover, &:focus {
+							background-color: $yellow;
+							color: black;
+						}
+					}
+					ul.dropdown-menu {
+						li {
+							a {
+								color: black;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.page-header {
+		margin-top: 15px;
+	}
+
+	.package-photos {
+		.package-photo {
+			position: relative;
+			form {
+				display: none;
+				position: absolute;
+				top: 30px;
+				left: 28px;
+			}
+			&:hover {
+				form {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.dropzone {
+	border-style: dashed !important;
+}

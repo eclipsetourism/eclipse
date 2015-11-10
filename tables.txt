@@ -1,0 +1,26 @@
+Package Table
+	user_id
+	name
+	description
+	departs
+	returns
+	duration
+	adult_price
+	child_price
+
+Bookings Table
+	id
+	user_id
+	date
+	booked date
+	status
+	comments	
+
+booking details table
+	booking_id
+	package_id
+	adult_quantity
+	child_quantity
+	subtotal
+	total
+
