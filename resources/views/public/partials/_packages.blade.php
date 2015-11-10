@@ -7,11 +7,11 @@
 				<div class="card">
 					
 					<div class="card-image waves-effect waves-block waves-light">
-						{!! photoUrl($package->photos, 'activator') !!}
+						{!! display($package->photos, 'activator') !!}
 					</div>
 
 					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">{{ $package->name }}</span>{{-- <i class="material-icons right">more_vert</i> --}}
+						<span class="card-title activator grey-text text-darken-4">{{ $package->name }}</span>
 						<p><a href="{{ route('package', $package->slug) }}">View Package</a></p>
 					</div>
 

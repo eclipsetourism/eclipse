@@ -6,7 +6,7 @@
 		<div class="order">
 			<div class="order__image">
 				<a href="{{ route('package', $item->options->package->slug) }}">
-					{!! photoUrl($item->options->package->photos, 'img-rounded', 70) !!}
+					{!! display($item->options->package->photos, 'img-rounded', 70) !!}
 				</a>
 			</div>
 

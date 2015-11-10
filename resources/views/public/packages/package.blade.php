@@ -19,7 +19,7 @@
 						<div class="col m9 s12 wow fadeInLeft">
 						
 							<div class="owl-carousel">
-								{!! photoUrl($package->photos) !!}
+								{!! displayAll($package->photos) !!}
 							</div>
 
 							<div class="package__description">
