@@ -1,29 +1,9 @@
 <?php
-
-use App\Package;
-use App\User;
-use Carbon\Carbon;
-
 /*
 |--------------------------------------------------------------------------
 | Public Routes
 |--------------------------------------------------------------------------
 */
-
-Route::get('testing', function() {
-
-	return session('currency');
-
-});
-
-Route::get('routes', function() {
-	\Artisan::call('route:list');
-	return "<pre>".\Artisan::output();
-});
-
-Event::listen('illuminate.query', function($query) {
-	//var_dump($query);
-});
 
 Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
 
@@ -52,8 +32,8 @@ Route::get('auth/login', 'AuthController@login');
 Route::post('auth/login', 'AuthController@postLogin');
 Route::get('auth/logout', 'AuthController@logout');
 
-// Route::get('auth/register', 'AuthController@register');
-// Route::post('auth/register', 'AuthController@postRegister');
+Route::get('auth/register', 'AuthController@register');
+Route::post('auth/register', 'AuthController@postRegister');
 
 /*
 |--------------------------------------------------------------------------
