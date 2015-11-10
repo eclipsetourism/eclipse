@@ -19,7 +19,7 @@
 				<td width="550">
 					<div class="row">
 						<div class="col m2">
-							{!! photoUrl($item->options->package->photos, 'materialboxed img-rounded', 100) !!}
+							{!! display($item->options->package->photos, 'materialboxed img-rounded', 100) !!}
 						</div>
 
 						<div class="col m9">
