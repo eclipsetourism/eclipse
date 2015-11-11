@@ -95,7 +95,7 @@ function displayAll($photos, $class='') {
 
 function getUploadedPhoto($filename) {
 	if( ! empty($filename) ) {
-		return '<img src="'.asset('images/uploads'. $filename).'" 
+		return '<img src="'.asset('images/uploads/'. $filename).'" 
 					alt="" 
 					title=""
 					class="responsive-img" />';
