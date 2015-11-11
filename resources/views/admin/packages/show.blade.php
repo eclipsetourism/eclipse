@@ -54,8 +54,6 @@
             			</div>
             		</div>
 
-            		<p>&nbsp;</p>
-
 		            <form class="dropzone" id="UploadPhotosForm" action="{{ route('admin.packages.photos.upload') }}">
 		            	{!! csrf_field() !!}
 		            	{!! method_field('PUT') !!}

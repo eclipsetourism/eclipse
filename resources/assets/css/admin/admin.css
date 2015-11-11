@@ -5769,15 +5769,17 @@ button.close {
 #wrapper .page-header {
   margin-top: 15px; }
 
-#wrapper .package-photos .package-photo {
-  position: relative; }
-  #wrapper .package-photos .package-photo form {
-    display: none;
-    position: absolute;
-    top: 30px;
-    left: 28px; }
-  #wrapper .package-photos .package-photo:hover form {
-    display: block; }
+#wrapper .package-photos {
+  margin-bottom: 20px; }
+  #wrapper .package-photos .package-photo {
+    position: relative; }
+    #wrapper .package-photos .package-photo form {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 28px; }
+    #wrapper .package-photos .package-photo:hover form {
+      display: block; }
 
 .dropzone {
   border-style: dashed !important; }
