@@ -93,6 +93,17 @@ function displayAll($photos, $class='') {
 	}
 }
 
+function getUploadedPhoto($filename) {
+	if( ! empty($filename) ) {
+		return '<img src="'.asset('images/uploads'. $filename).'" 
+					alt="" 
+					title=""
+					class="responsive-img" />';
+	} else {
+		return defaultImage($title);
+	}
+}
+
 function getPhoto($filename, $title = "Eclipse Tourism") {
 	if( ! empty($filename) ) {
 		return '<img src="'.asset('images/'. $filename).'" 

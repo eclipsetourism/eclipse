@@ -38,7 +38,7 @@
             				@forelse( $package->photos as $photo )
 	            				<div class="col-md-3">
 	            					<div class="package-photo">
-	            						{!! displayAll($package->photos, 'thumbnail img-responsive') !!}
+	            						{!! getUploadedPhoto($photo->path, 'thumbnail img-responsive') !!}
 	            						<form method="POST" action="{{ route('admin.packages.photos.delete', $photo->path) }}">
 	            							{!! csrf_field() !!}
 	            							{!! method_field('DELETE') !!}
