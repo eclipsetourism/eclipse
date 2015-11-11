@@ -31,6 +31,8 @@ class Package extends Model
 
     public function makeSlug($name) {
         
+        $this->attributes['slug'] = str_slug($name);
+
         $slug = str_slug($name);
 
         $latestSlug = static::whereRaw("slug RLIKE '^{$slug}(-[0-9]*)?$'")
