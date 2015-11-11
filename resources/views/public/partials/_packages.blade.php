@@ -17,7 +17,7 @@
 
 					<div class="card-reveal">
 						<span class="card-title grey-text text-darken-4">
-							{{ $package->name }}
+							{{ $package->subtitle }}
 							<i class="material-icons right">close</i>
 						</span>
 						{!! str_limit($package->description, 150) !!}

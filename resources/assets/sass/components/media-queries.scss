@@ -3,6 +3,14 @@
 
 @media only screen and (max-width: 40em) {
 
+  .center-content {
+    display: block;
+  }
+
+  .white-background {
+    padding: 20px 0;
+  }
+
   .page {
     .page__title {
       font-size: 30px;

@@ -11,6 +11,7 @@
             <table class="table table-hover">
                 <thead>
                     <tr>
+                        <th>Booking</th>
                         <th>Name</th>
                         <th>Email</th>
                         <th>Phone</th>
@@ -26,6 +27,9 @@
                     @forelse( $userWithBookings as $user )
 
                         <tr>
+                            @foreach($user->bookings as $booking) 
+                                <td>{{ $booking->booking_reference }}</td>
+                            @endforeach
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
                             <td>{{ $user->phone }}</td>

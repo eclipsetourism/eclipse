@@ -15,10 +15,22 @@
 		            <form method="POST" action="{{ route('admin.packages.store') }}">
 		            	{!! csrf_field() !!}
 
-		            	<div class="form-group">
-		            		<label for="name">Name</label>
-		            		<input type="text" name="name" id="name" class="form-control" value="{{ old('name') }}" placeholder="Package Name" />
+		            	<div class="row">
+		            		<div class="col-md-6">
+				            	<div class="form-group">
+				            		<label for="name">Name</label>
+				            		<input type="text" name="name" id="name" class="form-control" value="{{ old('name') }}" placeholder="Package Name" />
+				            	</div>
+		            		</div>
+
+		            		<div class="col-md-6">
+				            	<div class="form-group">
+				            		<label for="subtitle">Subtitle</label>
+				            		<input type="text" name="subtitle" id="subtitle" class="form-control" value="{{ old('subtitle') }}" placeholder="Action Packed Off Road Exploring" />
+				            	</div>
+		            		</div>
 		            	</div>
+
 
 		            	<div class="row">
 		            		<div class="col-md-6">

@@ -35,13 +35,19 @@
 
 							<ul class="collection">
 								<li class="collection-item">
+									<strong>Departs:</strong> {{ $package->departs }}
+								</li>
+								<li class="collection-item">
+									<strong>Returns:</strong> {{ $package->returns }}
+								</li>								
+								<li class="collection-item">
 									<strong>Duration:</strong> {{ $package->duration }}
 								</li>
 								<li class="collection-item">
-									<strong>Price (Adult):</strong> {!! convertedAmountWithCurrency($package->adult_price) !!}
+									<strong>Adult:</strong> {!! convertedAmountWithCurrency($package->adult_price) !!}
 								</li>
 								<li class="collection-item">
-									<strong>Price (Child):</strong> {!! convertedAmountWithCurrency($package->child_price) !!}
+									<strong>Child:</strong> {!! convertedAmountWithCurrency($package->child_price) !!}
 								</li>
 							</ul>
 

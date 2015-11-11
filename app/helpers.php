@@ -13,8 +13,12 @@ function flash($title = null, $message = null)
 
 function currentCurrency() {
 
-    if( session('currency') == '' ) {
-        return session(['currency' => 'AED']);
+    if( empty( session('currency') ) ) {
+
+        session(['currency' => 'AED']);
+    	
+    	return session('currency');
+    	
     }
 
     return session('currency');
@@ -50,28 +54,11 @@ function convertAmountInUSD($amount) {
 
 }
 
-function absolutePhotoPath($path) {
-
+function photoUrl($path) {
 	return '<img src="'. asset($path) .'" 
 			alt="" 
 			title=""
 			class="responsive-img" />';
-
-}
-
-function photoUrl($photos, $class='', $width = '') {
-	if( count($photos) > 0 ) {
-		foreach( $photos as $photo ) {
-			return '<img src="'. asset($photo->path) .'" 
-					alt="'.$photo->imageable->name .'" 
-					title="'.$photo->imageable->name.'" 
-					width="'.$width.'"
-					class="responsive-img '.$class.'" />';
-		}
-
-	} else {
-		return defaultImage();
-	}
 }
 
 function display($photos, $class='', $width = '') {

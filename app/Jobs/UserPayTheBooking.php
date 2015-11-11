@@ -66,8 +66,9 @@ class UserPayTheBooking extends Job implements SelfHandling
         if( $chargeWasSuccessful ) {
 
             $booking = $user->bookings()->create([
-                'status'        => 'pending',
-                'comments'      => ''
+                'booking_reference' => $user->id . time(),
+                'status'            => 'pending',
+                'comments'          => ''
             ]); 
 
             foreach( $cart->content() as $item ) {

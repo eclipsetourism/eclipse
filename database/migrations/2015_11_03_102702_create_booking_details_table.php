@@ -19,9 +19,7 @@ class CreateBookingDetailsTable extends Migration
             $table->integer('adult_quantity');
             $table->integer('child_quantity');
             $table->string('date');
-            $table->datetime('date_submit');            
-            // $table->string('subtotal');
-            // $table->string('total');
+            $table->datetime('date_submit');
         });    
     }
 

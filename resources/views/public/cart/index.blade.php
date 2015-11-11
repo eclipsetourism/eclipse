@@ -18,8 +18,9 @@
 					
 					@else
 
-						<p class="lead">
-							You don't have an item in your cart. <a href="{{ route('packages') }}">Book your package now.</a>
+						<p class="">
+							You don't have an item in your cart.
+							<a href="{{ route('packages') }}">Book a package now.</a>
 						</p>
 
 					@endif

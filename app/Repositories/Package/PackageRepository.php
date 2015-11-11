@@ -50,16 +50,16 @@ class PackageRepository implements PackageRepositoryInterface {
 	public function delete($id) {
 
 		$package = $this->find($id);
+
+		/**
+		 * Delete the photo from the directory /images/uploads
+		 */
+		$this->deleteExistingPhotos($id, 'Package');		
 		
 		/**
 		 * Delete the record from the "categories" table
 		 */
 		$package->delete();
-
-		/**
-		 * Delete the photo from the directory /images/uploads
-		 */
-		$this->deleteExistingPhotos($id, 'Package');
 
 	}
 
@@ -122,9 +122,9 @@ class PackageRepository implements PackageRepositoryInterface {
 		$model = 'App\\'.$model;
 
 		$oldPhoto = Photo::where('imageable_type', $model)
-							->where('imageable_id', $id)->get();
+							->where('imageable_id', $id);
 
-		if( count($oldPhoto->get()) > 0 ) {
+		if( count($oldPhoto) > 0 ) {
 
 			foreach( $oldPhoto->get() as $photo ) {
 

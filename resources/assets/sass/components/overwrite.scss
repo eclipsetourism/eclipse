@@ -1,5 +1,5 @@
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 300;
+.col {
+	margin-bottom: 20px;
 }
 
 header {
@@ -13,6 +13,7 @@ header {
 }
 
 .cd-hero {
+	margin-bottom: 40px;
 	.cd-hero-slider {
 		margin-top: 0;
 
@@ -25,7 +26,22 @@ header {
 	}
 }
 
+.owl-carousel {
+	.owl-controls {
+		position: absolute;
+		right: 30px;
+		bottom: 30px;
+
+		.owl-page {
+			span {
+				background: white !important;
+			}
+		}
+	}
+}
+
 .row {
+	margin-bottom: 0;
 	&.no-margin-bottom {
 		margin-bottom: 0;
 	}

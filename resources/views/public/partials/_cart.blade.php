@@ -15,6 +15,7 @@
 
 		<tbody>
 			@foreach( $cart->content() as $item )
+	
 			<tr>
 				<td width="550">
 					<div class="row">

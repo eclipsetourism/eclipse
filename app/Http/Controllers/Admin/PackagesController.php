@@ -54,12 +54,6 @@ class PackagesController extends Controller
         $package = $this->currentUser
                     ->packages()
                     ->create($request->all());
-        /**
-         * session('filename') => uploaded photo filename
-         */
-        if( ! empty(session('filename' )) ) {
-            $this->package->addPhoto($package->id, session('filename'));
-        }
         
         flash()->success('Yay!', 'You have successfully added new Package.');
 
@@ -101,6 +95,7 @@ class PackagesController extends Controller
                 ->where( 'id', $package->id )
                 ->update([
                     'name' => $request->name,
+                    'subtitle'  => $request->subtitle,
                     'departs' => $request->departs,
                     'returns' => $request->returns,
                     'duration' => $request->duration,

@@ -30,7 +30,7 @@ class BookingsController extends Controller
     public function index()
     {
         $userWithBookings = $this->user->all();
-
+        
         return view('admin.bookings.index', compact('userWithBookings'));
     }
 
