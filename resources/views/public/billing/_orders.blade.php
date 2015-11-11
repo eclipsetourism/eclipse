@@ -30,7 +30,7 @@
 
 <div class="currency card-panel">
 
-	<h5 class="mb-35">Select Currency</h5>
+	<h5>Select Currency</h5>
 
 	<form method="POST" action="{{ route('change-currency') }}" class="form-inline">
 		{!! csrf_field() !!}
@@ -56,5 +56,15 @@
 			<button type="submit" class="btn btn-sm waves-effect waves-light">Change</button>
 		</div>
 	</form>
+
+</div>
+
+<div class="currency card-panel">
+	<h5>Need Help?</h5>
+	<p>
+		Call our customer services team on the number below to speak to one of our advisors who will help you with all of your booking needs.
+	</p>
+	&nbsp;
+	<p class="center-content"><i class="material-icons">phone</i> +971 4 453 4375</p>
 
 </div>
