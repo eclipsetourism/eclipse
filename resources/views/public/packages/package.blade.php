@@ -1,6 +1,6 @@
 @extends('public.layouts.public')
 
-@section('pageTitle', $package->name)
+@section('pageTitle', sprintf('%s - %s', $package->name, $package->subtitle))
 
 @section('header_styles')
 	<link rel="stylesheet" href="{{ elixir('css/owl-carousel.css') }}" />
@@ -23,7 +23,7 @@
 							</div>
 
 							<div class="package__description">
-								<h3>Package Description</h3>
+								<h3>{{ $package->subtitle }}</h3>
 								{!! $package->description !!}
 							</div>
 						</div>
@@ -67,7 +67,7 @@
 
 									<div class="row">
 
-										<div class="col m12">
+										<div class="col m12 mb-0">
 											<div class="form-group">
 												<label for="date">Preffered Date:</label>
 												<div class="input-group">
@@ -79,7 +79,7 @@
 
 										<div class="col m12 s12">
 											<div class="row">
-												<div class="col m6 s6">
+												<div class="col m6 s6 mb-0">
 													<div class="form-group">
 														<label for="adult">Adult</label>
 														<select name="quantity" id="adult" class="form-control">
@@ -92,7 +92,7 @@
 													</div>
 												</div>
 
-												<div class="col m6 s6">
+												<div class="col m6 s6 mb-0">
 													<div class="form-group">
 														<label for="child">Child</label>
 														<select name="child_quantity" id="child" class="form-control">

@@ -37,6 +37,9 @@
 .mb-20 {
   margin-bottom: 20px; }
 
+.mb-0 {
+  margin-bottom: 0 !important; }
+
 .center-content {
   display: -webkit-flex;
   display: -ms-flexbox;
