@@ -98,7 +98,7 @@ function getUploadedPhoto($filename) {
 		return '<img src="'.asset('images/uploads/'. $filename).'" 
 					alt="" 
 					title=""
-					class="responsive-img" />';
+					class="img-responsive img-rounded" />';
 	} else {
 		return defaultImage($title);
 	}
