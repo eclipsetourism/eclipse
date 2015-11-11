@@ -1,6 +1,6 @@
 @extends('public.layouts.public')
 
-@section('pageTitle', 'Package')
+@section('pageTitle', $package->name)
 
 @section('header_styles')
 	<link rel="stylesheet" href="{{ elixir('css/owl-carousel.css') }}" />
