@@ -58,11 +58,11 @@
 		<div class="row">
 			<div class="col s12 m8">
 				<div class="owl-carousel">
-					<a href="{{ route('packages') }}">
+					<a href="{{ route('package', 'hot-air-balloon') }}">
 						{!! getPhoto('hot-air-balloon.jpg', 'Hot Air Balloon Tour') !!}
 					</a>
 
-					<a href="{{ route('packages') }}">
+					<a href="{{ route('package', 'hot-air-balloon') }}">
 						{!! getPhoto('hot-air-balloon.jpg', 'Hot Air Balloon Tour') !!}
 					</a>
 				</div>
@@ -73,7 +73,7 @@
 					<div class="col s12 m12 mb-20">
 						<div class="home__package">
 							
-							<a href="{{ route('packages') }}"></a>
+							<a href="{{ route('package', 'dune-buggy-drive') }}"></a>
 
 							{!! getPhoto('dune-buggy-drive-tour.jpg', 'Dune Buggy Drive Tour') !!}
 
@@ -84,7 +84,7 @@
 					<div class="col s12 m12">
 						<div class="home__package">
 							
-							<a href="{{ route('packages') }}"></a>
+							<a href="{{ route('package', 'ferrari-world-theme-park') }}"></a>
 
 							{!! getPhoto('ferrari-world-tour.jpg', 'Ferrari World Tour') !!}
 
@@ -101,7 +101,7 @@
 			<div class="col s12 m4">
 				<div class="home__package">
 					
-					<a href="{{ route('packages') }}"></a>
+					<a href="{{ route('package', 'desert-safari') }}"></a>
 
 					{!! getPhoto('desert-safari-tour.jpg', 'Desert Safari Tour') !!}
 
@@ -113,7 +113,7 @@
 			<div class="col s12 m4">
 				<div class="home__package">
 					
-					<a href="{{ route('packages') }}"></a>
+					<a href="{{ route('package', 'burj-khalifa') }}"></a>
 
 					{!! getPhoto('burj-khalifa-tour.jpg', 'Burj Khalifa Tour') !!}
 
@@ -126,7 +126,7 @@
 
 				<div class="home__package">
 					
-					<a href="{{ route('packages') }}"></a>
+					<a href="{{ route('package', 'dhow-dinner-cruise') }}"></a>
 
 					{!! getPhoto('dhow-cruise-tour.jpg', 'Dhow Cruise Tour') !!}
 
