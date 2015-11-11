@@ -80,7 +80,7 @@
 		<div class="col s6 m3">
 			<p class="center-content">
 				<a href="{{ route('packages') }}" class="btn-flat center-content">
-					<i class="fa fa-plus"></i> Add more Package
+					<i class="fa fa-plus"></i> Add Package
 				</a>
 			</p>
 		</div>
