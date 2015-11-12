@@ -31,8 +31,8 @@
 			<div class="row">
 				<div class="col s6 m6">
 					<div class="form-group">
-						<label for="expiry">Expiry Date</label>
-			            <select data-stripe="exp-month" id="expiry" class="form-control">
+						<label for="expiryMonth">Expiry Date</label>
+			            <select data-stripe="exp-month" id="expiryMonth" class="form-control">
 			            	<option value="1">January</option>
 			            	<option value="2">February</option>
 			            	<option value="3">March</option>
@@ -52,7 +52,7 @@
 				<div class="col s6 m6">
 					<div class="form-group">
 						<label>&nbsp;</label>
-			            <select data-stripe="exp-year" class="form-control">
+			            <select data-stripe="exp-year" id="expiryYear" class="form-control">
 			            	@foreach( range(date('Y'), date('Y') + 15) as $year)
 			            		<option value="{{ $year }}">{{ $year }}</option>
 			            	@endforeach

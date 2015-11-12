@@ -4,8 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0252d968718fb802dc60e9d14a0678a9",
+    "hash": "0956b0a43211b8254dee91fb957d20da",
     "packages": [
+        {
+            "name": "2checkout/2checkout-php",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/2Checkout/2checkout-php.git",
+                "reference": "eaadf8a310d5ac6e1df77939ab6fdd59e8dfb927"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/2Checkout/2checkout-php/zipball/eaadf8a310d5ac6e1df77939ab6fdd59e8dfb927",
+                "reference": "eaadf8a310d5ac6e1df77939ab6fdd59e8dfb927",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Twocheckout": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Craig Christenson",
+                    "email": "christensoncraig@gmail.com",
+                    "homepage": "https://github.com/craigchristenson"
+                }
+            ],
+            "description": "2Checkout PHP Library",
+            "homepage": "https://github.com/2Checkout/2checkout-php",
+            "keywords": [
+                "2checkout",
+                "2co",
+                "gateway",
+                "payment"
+            ],
+            "time": "2014-04-30 17:00:09"
+        },
         {
             "name": "ckeditor/ckeditor",
             "version": "4.5.4",

@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use App\Billings\BillingGateway;
-use App\Billings\StripeBilling;
+use App\Billings\TwocheckoutBilling;
 use App\Repositories\Booking\BookingRepository;
 use App\Repositories\Booking\BookingRepositoryInterface;
 use App\Repositories\Package\PackageRepository;
@@ -35,6 +35,6 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(PackageRepositoryInterface::class, PackageRepository::class);
         $this->app->bind(UserRepositoryInterface::class, UserRepository::class);
         $this->app->bind(BookingRepositoryInterface::class, BookingRepository::class);
-        $this->app->bind(BillingGateway::class, StripeBilling::class);
+        $this->app->bind(BillingGateway::class, TwocheckoutBilling::class);
     }
 }
