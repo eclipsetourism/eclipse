@@ -5,10 +5,6 @@
 |--------------------------------------------------------------------------
 */
 
-Route::get('testing', function() {
-	return Cart::content()->toArray();
-});
-
 Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
 
 Route::post('change-currency', ['as' => 'change-currency', 'uses' => 'PagesController@changeCurrency']);

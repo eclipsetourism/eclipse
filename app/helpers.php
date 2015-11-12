@@ -58,7 +58,7 @@ function photoUrl($path) {
 	return '<img src="'. asset($path) .'" 
 			alt="" 
 			title=""
-			class="responsive-img" />';
+			class="responsive-img img-rounded" />';
 }
 
 function display($photos, $class='', $width = '') {
@@ -104,12 +104,12 @@ function getUploadedPhoto($filename) {
 	}
 }
 
-function getPhoto($filename, $title = "Eclipse Tourism") {
+function getPhoto($filename, $title = "Eclipse Tourism", $class="img-rounded") {
 	if( ! empty($filename) ) {
 		return '<img src="'.asset('images/'. $filename).'" 
 					alt="'. $title.'" 
 					title="'.$title .'"
-					class="responsive-img" />';
+					class="responsive-img '.$class.'" />';
 	} else {
 		return defaultImage($title);
 	}

@@ -19,7 +19,7 @@
 						<div class="col m9 s12 wow fadeInLeft">
 						
 							<div class="owl-carousel">
-								{!! displayAll($package->photos) !!}
+								{!! displayAll($package->photos, 'img-rounded') !!}
 							</div>
 
 							<div class="package__description">
@@ -72,7 +72,7 @@
 												<label for="date">Preffered Date:</label>
 												<div class="input-group">
 													<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-													<input type="date" name="date" id="date" class="form-control datepicker" required />
+													<input type="text" name="date" id="date" class="form-control datepicker" required />
 												</div>
 											</div>
 										</div>
